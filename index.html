@@ -196,7 +196,8 @@
         
         // GitHub 이미지 경로를 생성하는 함수
         function getImagePath(imageName) {
-            return `https://raw.githubusercontent.com/daguliman-wq/english-game-images/refs/heads/main/${imageName}`;
+            // 파일을 같은 폴더에서 찾도록 상대 경로로 변경
+            return `./${imageName}`;
         }
 
         // 음성 재생 함수 (TTS 사용)
